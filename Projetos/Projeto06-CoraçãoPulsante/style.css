@@ -1,0 +1,44 @@
+.coracao {
+    position: relative;
+    background-color: #ff0000;
+    width: 200px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 250px;
+    transform: rotate(-45deg);
+    animation-name: pulsar;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.coracao:before, .coracao:after {
+    content: "";
+    background-color: #ff0000;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+}
+
+.coracao:before {
+    right: -100px;
+}
+
+.coracao:after {
+    top: -100px;
+}
+
+@keyframes pulsar {
+    from {
+        transform: scale3d(1, 1, 1) rotate(-45deg);
+    }
+
+    50% {
+        transform: scale3d(1.10, 1.10, 1.10) rotate(-45deg);
+    }
+
+    to {
+        transform: scale3d(1, 1, 1) rotate(-45deg);
+    }
+}

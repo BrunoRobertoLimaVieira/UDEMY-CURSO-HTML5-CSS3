@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            font: normal 15pt Arial;
+            background-color: black;
+            color: blanchedalmond;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var nome = window.prompt('Qual o seu nome?')
+        document.write(`Olá, <strong>${nome}</strong>! Aqui está alguns dados sobre seu salário:</br>`)
+        var n1 = Number(window.prompt('Qual seu atual salário?'))
+        document.write(`Seu salário em dollar é ${n1.toLocaleString('pt-BR', {style:'currency', currency:'USD'})}</br>`)
+        document.write(`Seu salário em reais é ${n1.toLocaleString('pt-BR', {style:'currency', currency:'BRL'})}</br>`)
+        document.write(`Seu salário em euro é ${n1.toLocaleString('pt-BR', {style:'currency', currency:'EUR'})}</br>`)
+        var n2 = Number(window.prompt('Quanto pretende ganhar?'))
+        document.write(`Seu salário daqui uns anos alcança a marca de ${n2.toLocaleString('pt-BR', {style:'currency', currency:'BRL'})} tenha fé!`)
+
+    </script>                      
+    <h1>Salário!</h1>
+    <h2>Descrisão:</h2>
+    <p>O salário é a remuneração que um trabalhador recebe pelo serviço que ele executa, o valor deste salário é variável de acordo com o contrato firmado entre o empregador e o empregado.
+
+Existe um valor mínimo que deve ser pago para o funcionário, conforme as leis trabalhistas brasileiras ou de associações ou sindicatos que o empregado pertence.
+
+Existem três maneiras que permitem que o salário seja pago, são elas:
+
+- por tempo de trabalho – o valor é fixo;
+- por produção - é variável e depende exclusivamente do funcionário;
+- por tarefa (comissão) – misto, o funcionário recebe um valor fixo + um valor por vendas, por exemplo.</p>
+</body>
+</html>
